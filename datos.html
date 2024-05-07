@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Datos Personales</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="form-container">
+    <h1>Formulario de Datos Personales</h1>
+    <form id="personal-info-form">
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </div>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        </div>
+        <div>
+            <label for="lugar-nacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
+        </div>
+        <div>
+            <label for="tipo-documento">Tipo de Documento Identidad:</label>
+            <select id="tipo-documento" name="tipo-documento">
+                <option value="TI">T.I</option>
+                <option value="CC">C.C</option>
+            </select>
+        </div>
+        <div>
+            <label for="numero-documento">Número Documento Identidad:</label>
+            <input type="text" id="numero-documento" name="numero-documento">
+        </div>
+        
+        /////////////////////////////////////
+        <div>
+            <label for="propositos">¿Cuáles son las principales actividades que usted realiza en su tiempo libre?:</label>
+            <textarea id="propositos" name="propositos" rows="4"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+</html>
