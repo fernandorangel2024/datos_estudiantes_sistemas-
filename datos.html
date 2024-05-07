@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   
 <div id="form-container">
-    <h1>Formulario de Datos Personales</h1>
+    <h1>Formulario de Datos Personales De Estudiantes.</h1>
     <form id="personal-info-form">
         <div>
             <label for="apellidos">Apellidos:</label>
@@ -42,16 +43,85 @@
             <input type="text" id="numero-documento" name="numero-documento">
         </div>
         
-        /////////////////////////////////////
+        <!-- Nuevas preguntas -->
         <div>
-            <label for="propositos">¿Cuáles son las principales actividades que usted realiza en su tiempo libre?:</label>
-            <textarea id="propositos" name="propositos" rows="4"></textarea>
+            <label>¿Sufre alguna enfermedad?</label>
+            <div>
+                <label for="enfermedad-si">Si:</label>
+                <input type="radio" id="enfermedad-si" name="enfermedad" value="Si">
+                <label for="enfermedad-no">No:</label>
+                <input type="radio" id="enfermedad-no" name="enfermedad" value="No">
+            </div>
+            <div>
+                <label for="enfermedad-cual">Cuál?:</label>
+                <input type="text" id="enfermedad-cual" name="enfermedad-cual">
+            </div>
         </div>
+        
+        <div>
+            <label for="estrato">Estrato socioeconómico:</label>
+            <input type="text" id="estrato" name="estrato">
+        </div>
+        <div>
+            <label>Familias en Acción:</label>
+            <div>
+                <label for="familias-accion-si">Si:</label>
+                <input type="radio" id="familias-accion-si" name="familias-accion" value="Si">
+                <label for="familias-accion-no">No:</label>
+                <input type="radio" id="familias-accion-no" name="familias-accion" value="No">
+            </div>
+        </div>
+        
+        <div>
+            <label for="religion">Tipo de Religión:</label>
+            <input type="text" id="religion" name="religion">
+        </div>
+        <div>
+            <label>Relación Padres:</label>
+            <div>
+                <label for="relacion-casados">Casados:</label>
+                <input type="checkbox" id="relacion-casados" name="relacion[]" value="Casados">
+                <label for="relacion-divorciados">Divorciados:</label>
+                <input type="checkbox" id="relacion-divorciados" name="relacion[]" value="Divorciados">
+                <label for="relacion-union-libre">Unión Libre:</label>
+                <input type="checkbox" id="relacion-union-libre" name="relacion[]" value="Unión Libre">
+                <label for="relacion-otro">Otro:</label>
+                <input type="text" id="relacion-otro" name="relacion-otro">
+            </div>
+        </div>
+        
+        <div>
+            <label>Computadora en casa:</label>
+            <div>
+                <label for="computadora-si">Si:</label>
+                <input type="radio" id="computadora-si" name="computadora" value="Si">
+                <label for="computadora-no">No:</label>
+                <input type="radio" id="computadora-no" name="computadora" value="No">
+            </div>
+        </div>
+        <div>
+            <label>Internet en casa:</label>
+            <div>
+                <label for="internet-si">Si:</label>
+                <input type="radio" id="internet-si" name="internet" value="Si">
+                <label for="internet-no">No:</label>
+                <input type="radio" id="internet-no" name="internet" value="No">
+            </div>
+        </div>
+        <div>
+            <label for="lugar-nacimiento">¿Cuáles son las principales actividades que usted realiza en su tiempo libre?:</label>
+            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento">
+        </div>
+        <div>
+            <label for="lugar-nacimiento">¿Cuáles son sus propósitos y espectativas personales y académicas como estudiante de la Especialidad en Sistemas?:</label>
+            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento">
+        </div>
+        
         <button type="submit">Enviar</button>
     </form>
 </div>
+<div>
+   
 <script src="script.js"></script>
 </body>
-</html>
-
 </html>
